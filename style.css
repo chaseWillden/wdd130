@@ -1,0 +1,19 @@
+main {
+    display: flex;
+    min-height: 200px;
+}
+
+.left {
+    width: 100px;
+    background-color: blue;
+}
+
+.middle {
+    flex: 1;
+    background-color: green;
+}
+
+.right {
+    width: 250px;
+    background-color: red;
+}
