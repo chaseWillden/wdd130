@@ -20,12 +20,13 @@
     <button id="click-me-btn">Click Me!</button>
     <script>
       const button = document.getElementById("click-me-btn");
-      button.onclick = function () {
-        document.body.style.backgroundColor = "black";
-      };
-
-      button.onmouseout = function () {
-        document.body.style.backgroundColor = "white";
+      // button.onclick = function () {
+      //   document.body.style.backgroundColor = "black";
+      // };
+      let state = 10;
+      button.onmouseenter = function () {
+        button.style.left = Math.ceil(Math.random() * 1000) + "px";
+        button.style.top = Math.ceil(Math.random() * 500) + "px";
       };
     </script>
   </body>
