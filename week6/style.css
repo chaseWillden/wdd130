@@ -1,0 +1,12 @@
+.triangle {
+    border-top: 0;
+    border-bottom: 100px solid black;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    display: inline-block;
+    transition: all 0.5s cubic-bezier(0.6, 0.04, 0.23, 0.84);
+}
+
+.triangle:hover {
+    transform: rotate(45deg);
+}
