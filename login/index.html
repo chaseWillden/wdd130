@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <form>
+      <h1>Login</h1>
+      <input type="text" placeholder="Username" class="input" id="username" />
+      <input
+        type="password"
+        placeholder="Password"
+        class="input"
+        id="password"
+      />
+      <button class="submit" type="submit">Login</button>
+    </form>
+
+    <script>
+      const form = document.querySelector("form");
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        const username = document.querySelector("#username").value;
+        const password = document.querySelector("#password").value;
+      });
+    </script>
+  </body>
+</html>
