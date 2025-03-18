@@ -12,6 +12,7 @@ form {
     display: flex;
     flex-direction: column;
     gap: 7px;
+    margin: 50px auto;
 }
 
 h1 {
